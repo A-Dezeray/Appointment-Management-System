@@ -1,0 +1,33 @@
+.appointment-card {
+  border: 1px solid #B388EB;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  background-color: #E6D6FA;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.appointment-card h3 {
+  color: #5E3B76;
+  margin: 0 0 5px 0;
+}
+
+.appointment-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 8px;
+  background-color: #B388EB;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #A06CD5;
+}
