@@ -1,1 +1,11 @@
-<p>appointment-list works!</p>
+<div *ngIf="appointments.length > 0; else noAppointments">
+  <div *ngFor="let appt of appointments" class="appointment-card">
+    <h3>{{ appt.name }}</h3>
+    <p>{{ appt.date }} at {{ appt.time }}</p>
+    <p>{{ appt.description }}</p>
+  </div>
+</div>
+
+<ng-template #noAppointments>
+  <p>No appointments scheduled yet.</p>
+</ng-template>
