@@ -1,1 +1,7 @@
-<p>appointment-form works!</p>
+<form (ngSubmit)="addAppointment()">
+  <input [(ngModel)]="name" name="name" placeholder="Name" required />
+  <input [(ngModel)]="date" name="date" type="date" required />
+  <input [(ngModel)]="time" name="time" type="time" required />
+  <input [(ngModel)]="description" name="description" placeholder="Description" required />
+  <button type="submit">Add Appointment</button>
+</form>
