@@ -16,6 +16,15 @@ export class AppointmentListComponent {
   constructor(private appointmentService: AppointmentService) {}
 
   ngOnInit() {
+    this.loadAppointments();
+  }
+
+  loadAppointments() {
     this.appointments = this.appointmentService.getAppointments();
+  }
+
+  deleteAppointment(id: number) {
+    this.appointmentService.deleteAppointment(id);
+    this.loadAppointments(); // Refresh the list
   }
 }

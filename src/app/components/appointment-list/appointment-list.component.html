@@ -3,6 +3,7 @@
     <h3>{{ appt.name }}</h3>
     <p>{{ appt.date }} at {{ appt.time }}</p>
     <p>{{ appt.description }}</p>
+    <button (click)="deleteAppointment(appt.id)">Delete</button>
   </div>
 </div>
 
